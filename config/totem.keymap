@@ -31,17 +31,17 @@
 
         Enter {
             bindings = <&kp ENTER>;
-            key-positions = <19 18>;
+            key-positions = <19 18 17>;
         };
 
         Backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <9 8>;
+            key-positions = <9 8 7>;
         };
 
         Tab {
             bindings = <&kp TAB>;
-            key-positions = <0 1>;
+            key-positions = <0 1 2>;
         };
     };
 
@@ -59,6 +59,42 @@
             compatible = "zmk,behavior-mod-morph";
             label = "GAMING_LAYER";
             bindings = <&tog 2>, <&tog 3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        up_pgup: up_pgup {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UP_PGUP";
+            bindings = <&kp UP_ARROW>, <&kp PG_UP>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        down_pgdown: down_pgdown {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOWN_PGDOWN";
+            bindings = <&kp DOWN_ARROW>, <&kp PAGE_DOWN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        left_home: left_home {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFT_HOME";
+            bindings = <&kp LEFT_ARROW>, <&kp HOME>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        right_end: right_end {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHT_END";
+            bindings = <&kp RIGHT_ARROW>, <&kp END>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
