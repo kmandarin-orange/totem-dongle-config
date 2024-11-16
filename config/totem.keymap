@@ -87,37 +87,37 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                    &kp Q  &kp W  &kp E           &kp R             &kp T              &kp Y                    &kp U          &kp I      &kp O    &kp P
-                    &kp A  &kp S  &kp D           &kp F             &kp G              &kp H                    &kp J          &kp K      &kp L    &kp SEMI
-&mt LEFT_SHIFT ESC  &kp Z  &kp X  &kp C           &kp V             &kp B              &kp N                    &kp M          &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_SHIFT BACKSLASH
-                                  &lt 1 LEFT_ALT  &kp LEFT_COMMAND  &mt LCTRL SPACE    &mt RIGHT_CONTROL SPACE  &kp BACKSPACE  &tog 2
+                    &kp Q  &kp W  &kp E               &kp R             &kp T              &kp Y        &kp U          &kp I        &kp O    &kp P
+                    &kp A  &kp S  &kp D               &kp F             &kp G              &kp H        &kp J          &kp K        &kp L    &kp SEMI
+&mt LEFT_SHIFT ESC  &kp Z  &kp X  &kp C               &kp V             &kp B              &kp N        &kp M          &kp COMMA    &kp DOT  &kp FSLH  &mt RIGHT_SHIFT BACKSLASH
+                                  &mt LEFT_ALT MINUS  &kp LEFT_COMMAND  &mt LCTRL SPACE    &lt 1 SPACE  &kp BACKSPACE  &lt 2 EQUAL
             >;
         };
 
         nums_and_syms {
             bindings = <
-        &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LPAR  &kp RIGHT_PARENTHESIS
-        &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &kp N6     &kp N7            &kp N8             &kp N9    &kp N0
-&trans  &kp GRAVE        &trans       &trans    &trans      &trans         &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans                 &trans
-                                      &trans    &trans      &trans         &trans     &trans            &trans
+        &kp EXCLAMATION  &kp AT_SIGN  &kp HASH          &kp DOLLAR         &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LPAR  &kp RIGHT_PARENTHESIS
+        &kp N1           &kp N2       &kp N3            &kp N4             &kp N5         &kp N6     &kp N7         &kp N8        &kp N9    &kp N0
+&trans  &kp GRAVE        &trans       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS      &kp EQUAL  &trans         &trans        &trans    &trans                 &trans
+                                      &trans            &trans             &trans         &trans     &trans         &trans
             >;
         };
 
         movement_and_media {
             bindings = <
-        &kp F1  &kp F2          &kp F3        &kp F4           &kp F5                  &kp F8                &kp F9          &kp UP_ARROW    &kp F11          &kp F12
-        &kp F2  &kp K_MUTE      &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC    &kp C_BRIGHTNESS_INC  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F11
-&kp F1  &kp F7  &kp C_PREVIOUS  &kp C_PAUSE   &kp C_NEXT       &kp F11                 &trans                &trans          &trans          &trans           &trans   &kp K_LOCK
-                                &trans        &trans           &trans                  &trans                &trans          &trans
+        &kp F1       &kp F2          &kp F3        &kp F4           &kp F5                  &kp F8                &kp F9          &kp UP_ARROW    &kp F11          &kp F12
+        &kp F7       &kp K_MUTE      &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC    &kp C_BRIGHTNESS_INC  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INSERT
+&kp F6  &bootloader  &kp C_PREVIOUS  &kp C_PAUSE   &kp C_NEXT       &kp PRINTSCREEN         &trans                &trans          &trans          &trans           &trans      &kp K_LOCK
+                                     &tog 3        &trans           &trans                  &trans                &trans          &trans
             >;
         };
 
         gaming {
             bindings = <
-           &kp Q  &kp W  &kp E     &kp R      &kp T        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5
-           &kp A  &kp S  &kp D     &kp F      &kp G        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B        &kp H         &kp N         &kp M         &kp DOT       &kp FSLH  &kp RET
-                         &kp LALT  &kp LCTRL  &kp SPACE    &kp SPACE     &trans        &tog 0
+           &kp T  &kp Q  &kp W                &kp E      &kp R        &kp F1        &kp F2           &kp F3        &kp F4        &kp F5
+           &kp G  &kp A  &kp S                &kp D      &kp F        &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp N5
+&kp LSHFT  &kp B  &kp Z  &kp X                &kp C      &kp V        &kp H         &kp N            &kp M         &kp DOT       &kp FSLH  &kp RET
+                         &mt LEFT_ALT ESCAPE  &kp LCTRL  &kp SPACE    &kp SPACE     &lt 2 BACKSPACE  &tog 0
             >;
         };
 
@@ -126,3 +126,4 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
     };
 };
+
