@@ -48,17 +48,27 @@
             bindings = <&kp GRAVE>;
             key-positions = <0 1>;
         };
+
+        Bootloader {
+            bindings = <&bootloader>;
+            key-positions = <20 34 25 35 31>;
+        };
+
+        Delete-workaround {
+            bindings = <&kp DELETE>;
+            key-positions = <20 35>;
+        };
     };
 
     behaviors {
-        bksp_del: bksp_del {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BKSP_DEL";
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+        // bksp_del: bksp_del {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     label = "BKSP_DEL";
+        //     bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+        //     #binding-cells = <0>;
+        //     mods = <(MOD_LSFT|MOD_RSFT)>;
+        // };
 
         gaming_layer: gaming_layer {
             compatible = "zmk,behavior-mod-morph";
@@ -128,10 +138,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                    &kp Q  &kp W  &kp E               &kp R             &kp T              &kp Y        &kp U          &kp I        &kp O    &kp P
-                    &kp A  &kp S  &kp D               &kp F             &kp G              &kp H        &kp J          &kp K        &kp L    &kp SEMI
-&mt LEFT_SHIFT ESC  &kp Z  &kp X  &kp C               &kp V             &kp B              &kp N        &kp M          &kp COMMA    &kp DOT  &kp FSLH  &mt RIGHT_SHIFT APOSTROPHE
-                                  &mt LEFT_ALT MINUS  &kp LEFT_COMMAND  &mt LCTRL SPACE    &lt 1 SPACE  &kp BACKSPACE  &lt 2 EQUAL
+                    &kp Q  &kp W  &kp E               &kp R                   &kp T               &kp Y          &kp U        &kp I        &kp O    &kp P
+                    &kp A  &kp S  &kp D               &kp F                   &kp G               &kp H          &kp J        &kp K        &kp L    &kp SEMI
+&mt LEFT_SHIFT ESC  &kp Z  &kp X  &kp C               &kp V                   &kp B               &kp N          &kp M        &kp COMMA    &kp DOT  &kp FSLH  &mt RIGHT_SHIFT APOSTROPHE
+                                  &mt LEFT_ALT MINUS  &mt LEFT_CONTROL SPACE  &kp LEFT_COMMAND    &kp BACKSPACE  &lt 1 SPACE  &lt 2 EQUAL
             >;
         };
 
@@ -146,10 +156,10 @@
 
         movement_and_media {
             bindings = <
-        &kp F1       &kp F2          &kp F3        &kp F4           &kp F5                  &kp F8                &kp F9          &kp UP_ARROW    &kp F11          &kp F12
-        &kp F7       &kp K_MUTE      &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC    &kp C_BRIGHTNESS_INC  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INSERT
-&kp F6  &bootloader  &kp C_PREVIOUS  &kp C_PAUSE   &kp C_NEXT       &kp PRINTSCREEN         &trans                &trans          &trans          &trans           &trans      &kp K_LOCK
-                                     &tog 3        &trans           &trans                  &trans                &trans          &trans
+        &kp F1  &kp F2          &kp F3        &kp F4           &kp F5                  &kp F8                &kp F9          &kp UP_ARROW    &kp F11          &kp F12
+        &kp F6  &kp K_MUTE      &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC    &kp C_BRIGHTNESS_INC  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INSERT
+&trans  &kp F7  &kp C_PREVIOUS  &kp C_PAUSE   &kp C_NEXT       &kp PRINTSCREEN         &trans                &trans          &trans          &trans           &kp K_LOCK  &trans
+                                &tog 3        &trans           &trans                  &trans                &trans          &trans
             >;
         };
 
@@ -167,3 +177,4 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
     };
 };
+
