@@ -61,14 +61,14 @@
     };
 
     behaviors {
-        bksp_del: bksp_del {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BKSP_DEL";
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+        // bksp_del: bksp_del {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     label = "BKSP_DEL";
+        //     bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+        //     #binding-cells = <0>;
+        //     mods = <(MOD_LSFT|MOD_RSFT)>;
+        // };
 
         gaming_layer: gaming_layer {
             compatible = "zmk,behavior-mod-morph";
@@ -147,10 +147,10 @@
 
         nums_and_syms {
             bindings = <
-        &kp EXCLAMATION  &kp AT_SIGN  &kp HASH          &kp DOLLAR         &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LPAR  &kp RIGHT_PARENTHESIS
-        &kp N1           &kp N2       &kp N3            &kp N4             &kp N5         &kp N6     &kp N7         &kp N8        &kp N9    &kp N0
-&trans  &kp GRAVE        &trans       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS      &kp EQUAL  &trans         &trans        &trans    &kp BACKSLASH          &trans
-                                      &trans            &trans             &trans         &trans     &trans         &trans
+        &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LPAR  &kp RIGHT_PARENTHESIS
+        &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &kp N6     &kp N7            &kp N8             &kp N9    &kp N0
+&trans  &kp GRAVE        &trans       &trans    &trans      &kp MINUS      &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &kp BACKSLASH          &trans
+                                      &trans    &trans      &trans         &trans     &trans            &trans
             >;
         };
 
@@ -177,3 +177,4 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
     };
 };
+;
