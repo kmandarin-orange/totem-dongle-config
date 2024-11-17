@@ -61,14 +61,14 @@
     };
 
     behaviors {
-        // bksp_del: bksp_del {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     label = "BKSP_DEL";
-        //     bindings = <&kp BACKSPACE>, <&kp DELETE>;
+        bksp_del: bksp_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BKSP_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
-        //     #binding-cells = <0>;
-        //     mods = <(MOD_LSFT|MOD_RSFT)>;
-        // };
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
         gaming_layer: gaming_layer {
             compatible = "zmk,behavior-mod-morph";
@@ -159,7 +159,7 @@
         &kp F1  &kp F2          &kp F3        &kp F4           &kp F5                  &kp F8                &kp F9          &kp UP_ARROW    &kp F11          &kp F12
         &kp F6  &kp K_MUTE      &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC    &kp C_BRIGHTNESS_INC  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INSERT
 &trans  &kp F7  &kp C_PREVIOUS  &kp C_PAUSE   &kp C_NEXT       &kp PRINTSCREEN         &trans                &trans          &trans          &trans           &kp K_LOCK  &trans
-                                &tog 3        &trans           &trans                  &trans                &trans          &trans
+                                &to 3         &trans           &trans                  &trans                &trans          &trans
             >;
         };
 
@@ -168,7 +168,7 @@
            &kp T  &kp Q  &kp W                &kp E      &kp R        &kp F1        &kp F2           &kp F3        &kp F4        &kp F5
            &kp G  &kp A  &kp S                &kp D      &kp F        &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp N5
 &kp LSHFT  &kp B  &kp Z  &kp X                &kp C      &kp V        &kp H         &kp N            &kp M         &kp DOT       &kp FSLH  &kp RET
-                         &mt LEFT_ALT ESCAPE  &kp LCTRL  &kp SPACE    &kp SPACE     &lt 2 BACKSPACE  &tog 0
+                         &mt LEFT_ALT ESCAPE  &kp LCTRL  &kp SPACE    &kp SPACE     &lt 2 BACKSPACE  &to 0
             >;
         };
 
@@ -177,4 +177,3 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
     };
 };
-
