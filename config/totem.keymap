@@ -51,7 +51,7 @@
 
         Bootloader {
             bindings = <&bootloader>;
-            key-positions = <20 34 25 35 31>;
+            key-positions = <20 34 35 31>;
         };
 
         Delete-workaround {
