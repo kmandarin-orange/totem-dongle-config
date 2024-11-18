@@ -53,8 +53,7 @@
             bindings = <&bootloader>;
             key-positions = <20 34 35 31>;
         };
-
-   };
+    };
 
     behaviors {
         bksp_del: bksp_del {
@@ -145,7 +144,7 @@
             bindings = <
         &kp F1  &kp F2          &kp F3        &kp F4           &kp F5                  &kp F8                &kp F9      &up_pgup      &kp F11     &kp F12
         &kp F6  &kp K_MUTE      &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC    &kp C_BRIGHTNESS_INC  &left_home  &down_pgdown  &right_end  &kp INSERT
-&trans  &kp F7  &kp C_PREVIOUS  &kp C_PAUSE   &kp C_NEXT       &kp PRINTSCREEN         &trans                &trans      &trans        &trans      &kp C_AL_LOCK  &trans
+&trans  &kp F7  &kp C_PREVIOUS  &kp C_PAUSE   &kp C_NEXT       &kp PRINTSCREEN         &kp CAPS              &trans      &trans        &trans      &kp C_AL_SCREENSAVER  &trans
                                 &to 3         &trans           &trans                  &trans                &trans      &trans
             >;
         };
