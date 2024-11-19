@@ -31,22 +31,22 @@
 
         Enter {
             bindings = <&kp ENTER>;
-            key-positions = <19 18 17>;
+            key-positions = <19 18>;
         };
 
         Backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <9 8 7>;
+            key-positions = <9 8>;
         };
 
         Tab {
             bindings = <&kp TAB>;
-            key-positions = <0 1 2>;
+            key-positions = <0 1>;
         };
 
         Grave {
             bindings = <&kp GRAVE>;
-            key-positions = <0 1>;
+            key-positions = <0 11>;
         };
 
         Bootloader {
@@ -71,7 +71,7 @@
             bindings = <&kp UP_ARROW>, <&kp PG_UP>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
+            mods = <(MOD_RSFT)>;
         };
 
         down_pgdown: down_pgdown {
@@ -80,7 +80,7 @@
             bindings = <&kp DOWN_ARROW>, <&kp PAGE_DOWN>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_RSFT)>;
         };
 
         left_home: left_home {
@@ -89,7 +89,7 @@
             bindings = <&kp LEFT_ARROW>, <&kp HOME>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_RSFT)>;
         };
 
         right_end: right_end {
@@ -98,7 +98,7 @@
             bindings = <&kp RIGHT_ARROW>, <&kp END>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_RSFT)>;
         };
     };
 
@@ -145,7 +145,7 @@
         &kp F1  &kp F2          &kp F3        &kp F4           &kp F5                  &kp F8                &kp F9      &up_pgup      &kp F11     &kp F12
         &kp F6  &kp K_MUTE      &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC    &kp C_BRIGHTNESS_INC  &left_home  &down_pgdown  &right_end  &kp INSERT
 &trans  &kp F7  &kp C_PREVIOUS  &kp C_PAUSE   &kp C_NEXT       &kp PRINTSCREEN         &kp CAPS              &trans      &trans        &trans      &kp C_AL_SCREENSAVER  &trans
-                                &trans        &trans           &trans                  &trans                &to 3       &trans
+                                &to 3         &trans           &trans                  &trans                &trans      &trans
             >;
         };
 
