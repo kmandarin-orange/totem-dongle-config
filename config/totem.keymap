@@ -160,10 +160,10 @@
 
         bootloader {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans         &trans       &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &bootloader    &bootloader  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans       &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans         &trans       &trans  &trans
+        &trans  &trans  &trans  &trans  &trans         &trans         &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &bootloader    &bootloader    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &studio_unlock &studio_unlock &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans         &trans         &trans  &trans
             >;
         };
 
