@@ -32,15 +32,15 @@
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <19 18>;
-            timeout-ms = <65>;
+            timeout-ms = <60>;
             require-prior-idle-ms = <120>;
         };
 
         combo_bksp {
             bindings = <&kp BACKSPACE>;
             key-positions = <9 8>;
-            timeout-ms = <65>;
-            require-prior-idle-ms = <120>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <250>;
         };
 
         combo_tab {
