@@ -39,15 +39,15 @@
         combo_bksp {
             bindings = <&kp BACKSPACE>;
             key-positions = <9 8>;
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <250>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <0 1>;
-            timeout-ms = <65>;
-            require-prior-idle-ms = <120>;
+            timeout-ms = <55>;
+            require-prior-idle-ms = <200>;
         };
 
         Grave {
@@ -148,10 +148,10 @@
 
         movement_and_media {
             bindings = <
-        &kp F1  &kp C_PREVIOUS  &kp C_PP      &kp C_NEXT       &kp C_BRIGHTNESS_INC    &kp CAPSLOCK          &kp PRINTSCREEN  &up_pgup      &trans      &kp C_AL_SCREENSAVER
-        &kp F2  &kp K_MUTE      &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC    &kp C_BRIGHTNESS_INC  &left_home       &down_pgdown  &right_end  &kp INSERT
-&trans  &kp F3  &kp F4          &kp F5        &kp F6           &kp F7                  &kp F8                &kp F9           &kp F10       &kp F11     &kp F12               &trans
-                                &trans        &trans           &trans                  &mo 4                 &to 3            &trans
+        &kp F1  &kp C_PREVIOUS  &kp C_PP      &kp C_NEXT       &kp C_BRIGHTNESS_INC    &kp CAPSLOCK     &trans      &up_pgup      &trans      &kp C_AL_SCREENSAVER
+        &kp F2  &kp K_MUTE      &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC    &kp PRINTSCREEN  &left_home  &down_pgdown  &right_end  &kp INSERT
+&trans  &kp F3  &kp F4          &kp F5        &kp F6           &kp F7                  &kp F8           &kp F9      &kp F10       &kp F11     &kp F12               &trans
+                                &trans        &trans           &trans                  &mo 4            &to 3       &trans
             >;
         };
 
