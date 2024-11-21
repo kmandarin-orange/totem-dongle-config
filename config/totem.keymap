@@ -40,7 +40,7 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <9 8>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <170>;
+            require-prior-idle-ms = <185>;
         };
 
         combo_tab {
