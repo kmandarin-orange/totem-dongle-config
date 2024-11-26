@@ -29,19 +29,19 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <19 18>;
-            timeout-ms = <60>;
-            require-prior-idle-ms = <100>;
-        };
+        // combo_enter {
+        //     bindings = <&kp ENTER>;
+        //     key-positions = <19 18>;
+        //     timeout-ms = <60>;
+        //     require-prior-idle-ms = <100>;
+        // };
 
-        combo_bksp {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <9 8>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <185>;
-        };
+        // combo_bksp {
+        //     bindings = <&kp BACKSPACE>;
+        //     key-positions = <9 8>;
+        //     timeout-ms = <50>;
+        //     require-prior-idle-ms = <185>;
+        // };
 
         combo_tab {
             bindings = <&kp TAB>;
@@ -133,7 +133,7 @@
                     &kp Q  &kp W  &kp E               &kp R                   &kp T               &kp Y      &kp U        &kp I        &kp O    &kp P
                     &kp A  &kp S  &kp D               &kp F                   &kp G               &kp H      &kp J        &kp K        &kp L    &kp SEMI
 &mt LEFT_SHIFT ESC  &kp Z  &kp X  &kp C               &kp V                   &kp B               &kp N      &kp M        &kp COMMA    &kp DOT  &kp FSLH  &mt RIGHT_SHIFT APOSTROPHE
-                                  &mt LEFT_ALT MINUS  &mt LEFT_CONTROL SPACE  &kp LEFT_COMMAND    &bksp_del  &lt 1 SPACE  &lt 2 EQUAL
+                                  &mt LEFT_ALT MINUS  &mt LEFT_CONTROL SPACE  &kp LEFT_COMMAND    &bksp_del  &lt 1 ENTER  &lt 2 EQUAL
             >;
         };
 
