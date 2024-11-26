@@ -29,19 +29,19 @@
     combos {
         compatible = "zmk,combos";
 
-        // combo_enter {
-        //     bindings = <&kp ENTER>;
-        //     key-positions = <19 18>;
-        //     timeout-ms = <60>;
-        //     require-prior-idle-ms = <100>;
-        // };
+        combo_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <19 18>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <100>;
+        };
 
-        // combo_bksp {
-        //     bindings = <&kp BACKSPACE>;
-        //     key-positions = <9 8>;
-        //     timeout-ms = <50>;
-        //     require-prior-idle-ms = <185>;
-        // };
+        combo_bksp {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <9 8>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <185>;
+        };
 
         combo_tab {
             bindings = <&kp TAB>;
