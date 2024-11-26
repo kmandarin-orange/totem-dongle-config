@@ -33,7 +33,7 @@
             bindings = <&kp ENTER>;
             key-positions = <19 18>;
             timeout-ms = <60>;
-            require-prior-idle-ms = <120>;
+            require-prior-idle-ms = <100>;
         };
 
         combo_bksp {
