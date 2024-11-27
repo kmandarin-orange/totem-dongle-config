@@ -41,7 +41,7 @@
             key-positions = <9 8>;
             timeout-ms = <50>;
             require-prior-idle-ms = <185>;
-            layers = <1, 2>;
+            layers = <1 2>;
         };
 
         combo_tab {
