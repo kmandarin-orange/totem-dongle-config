@@ -60,6 +60,11 @@
             bindings = <&bootloader>;
             key-positions = <20 34 35 31>;
         };
+
+        colemak_toggle {
+            bindings = <&tog 5>;
+            key-positions = <20 32 37 31>;
+        };
     };
 
     behaviors {
@@ -171,6 +176,15 @@
         &trans  &trans  &trans  &trans  &bootloader       &bootloader     &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &studio_unlock    &studio_unlock  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans            &trans          &trans  &trans
+            >;
+        };
+
+        colemak_dh {
+            bindings = <
+        &kp Q  &kp W  &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp SEMI
+        &kp A  &kp R  &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O
+&trans  &kp Z  &kp X  &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH  &trans
+                      &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
