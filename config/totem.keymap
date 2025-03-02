@@ -21,7 +21,7 @@
 &mt {
     quick-tap-ms = <(-1)>;
     flavor = "hold-preferred";
-    tapping-term-ms = <100>;
+    tapping-term-ms = <115>;
 };
 
 / {
