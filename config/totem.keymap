@@ -19,10 +19,9 @@
 #define ADJ  3
 
 &mt {
-    quick-tap-ms = <100>;
-    global-quick-tap;
+    quick-tap-ms = <(-1)>;
     flavor = "hold-preferred";
-    tapping-term-ms = <135>;
+    tapping-term-ms = <100>;
 };
 
 / {
