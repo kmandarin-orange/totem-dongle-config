@@ -61,7 +61,7 @@
         };
 
         colemak_toggle {
-            bindings = <&tog 5>;
+            bindings = <&tog 0>;
             key-positions = <20 32 37 31>;
         };
     };
@@ -118,27 +118,12 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        base_layer {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "BASE";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃     Q     ┃     W     ┃     E     ┃     R     ┃     T     ┃   ┃     Y     ┃     U     ┃     I     ┃     O     ┃     P     ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃     A     ┃     S     ┃     D     ┃     F     ┃     G     ┃   ┃     H     ┃     J     ┃     K     ┃     L     ┃     ;     ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃     Q     ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃     \     ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃    DEL    ┃    TAB    ┃    SPC    ┃   ┃   ENTER   ┃           ┃   BSPC    ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
+        colemak_base {
             bindings = <
-                    &kp Q  &kp W  &kp E               &kp R                   &kp T               &kp Y      &kp U        &kp I        &kp O    &kp P
-                    &kp A  &kp S  &kp D               &kp F                   &kp G               &kp H      &kp J        &kp K        &kp L    &kp SEMI
-&mt LEFT_SHIFT ESC  &kp Z  &kp X  &kp C               &kp V                   &kp B               &kp N      &kp M        &kp COMMA    &kp DOT  &kp FSLH  &mt RIGHT_SHIFT APOSTROPHE
-                                  &mt LEFT_ALT MINUS  &mt LEFT_CONTROL ENTER  &kp LEFT_COMMAND    &bksp_del  &lt 1 SPACE  &lt 2 EQUAL
+                    &kp Q  &kp W  &kp F               &kp P            &kp B               &kp J      &kp L        &kp U        &kp Y    &kp SEMI
+                    &kp A  &kp R  &kp S               &kp T            &kp G               &kp M      &kp N        &kp E        &kp I    &kp O
+&mt LEFT_SHIFT ESC  &kp Z  &kp X  &kp C               &kp D            &kp V               &kp K      &kp H        &kp COMMA    &kp DOT  &kp FSLH  &mt RIGHT_SHIFT APOSTROPHE
+                                  &mt LEFT_ALT MINUS  &mt LCTRL ENTER  &kp LEFT_COMMAND    &bksp_del  &lt 1 SPACE  &lt 2 EQUAL
             >;
         };
 
@@ -175,15 +160,6 @@
         &trans  &trans  &trans  &trans  &bootloader       &bootloader     &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &studio_unlock    &studio_unlock  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans            &trans          &trans  &trans
-            >;
-        };
-
-        colemak_dh {
-            bindings = <
-        &kp Q  &kp W  &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp SEMI
-        &kp A  &kp R  &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O
-&trans  &kp Z  &kp X  &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
