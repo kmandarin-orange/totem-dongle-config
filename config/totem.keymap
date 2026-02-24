@@ -144,7 +144,7 @@
            &kp T  &kp Q  &kp W                &kp E      &kp R        &kp F1        &kp F2           &kp F3        &kp F4        &kp F5
            &kp G  &kp A  &kp S                &kp D      &kp F        &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp N5
 &kp LSHFT  &kp B  &kp Z  &kp X                &kp C      &kp V        &kp H         &kp N            &kp M         &kp DOT       &kp FSLH  &kp RET
-                         &mt LEFT_ALT ESCAPE  &kp LCTRL  &kp SPACE    &kp SPACE     &lt 2 BACKSPACE  &to 0
+                         &mt LEFT_ALT ESCAPE  &kp LCTRL  &kp SPACE    &trans        &lt 2 BACKSPACE  &to 0
             >;
         };
 
